@@ -1,0 +1,16 @@
+{
+  "name": "adventofcode2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "node --test --require ts-node/register --test-reporter spec **/test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.10.1",
+    "ts-node": "^10.9.1"
+  }
+}
