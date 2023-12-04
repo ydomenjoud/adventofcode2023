@@ -14,3 +14,15 @@ export async function* readLineByLine(
         yield line;
     }
 }
+
+export async function readWholeFile(
+    file: string
+): Promise<string[]> {
+
+    const linesList: string[] = [];
+    for await(const line of readLineByLine(file)) {
+        linesList.push(line);
+    }
+    return linesList;
+
+}
