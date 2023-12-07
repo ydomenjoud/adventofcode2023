@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "node --test --require ts-node/register --test-reporter spec **/test.ts"
+    "test": "node --test --require ts-node/register --watch --test-name-pattern=\"day $DAY\" --test-reporter ./test.reporter.js **/test.ts"
   },
   "keywords": [],
   "author": "",
